@@ -1,9 +1,11 @@
 const d = require("./d");
 const ping = require("./ping");
+const play = require("./play");
 
 const commands = {
   d,
   ping,
+  play,
 };
 
 module.exports = async (msg) => {
