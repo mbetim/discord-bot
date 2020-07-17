@@ -4,9 +4,10 @@ module.exports = async (msg, args) => {
   const message = args.join(" ").trim();
   const query = {
     p: 4,
-    plat: "all",
     count: 10,
     r: 10,
+    g: "all",
+    plat: "all",
   };
 
   // Pegando os parametros da query do usuário
@@ -22,7 +23,9 @@ module.exports = async (msg, args) => {
         (game) =>
           game.maxPlayers >= query.p &&
           game.requirements <= query.r &&
-          (query.plat === "all" || game.platform.join(" ").includes(query.plat.toLocaleLowerCase()))
+          (query.plat === "all" ||
+            game.platform.join(" ").includes(query.plat.toLocaleLowerCase())) &&
+          (query.g === "all" || game.genres.join(" ").includes(query.g.toLocaleLowerCase()))
       )
       .sort((a, b) => (a.name > b.name ? 1 : -1))
       .slice(0, query.count)
