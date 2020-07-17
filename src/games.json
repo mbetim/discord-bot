@@ -1,0 +1,52 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "Sea of Thieves",
+      "maxPlayers": 4,
+      "genres": ["fps", "ação", "aventura", "navios", "pirataria"],
+      "platform": ["steam", "xbox"],
+      "requirements": 7.5
+    },
+    {
+      "id": 2,
+      "name": "Surviv.io",
+      "maxPlayers": 4,
+      "genres": ["fps/tps", "ação", "battle-royal"],
+      "platform": ["browser"],
+      "requirements": 1
+    },
+    {
+      "id": 3,
+      "name": "The escapists 2",
+      "maxPlayers": 4,
+      "genres": ["ação", "indie", "simulação", "estrategia"],
+      "platform": ["epic"],
+      "requirements": 3
+    },
+    {
+      "id": 4,
+      "name": "Terraria",
+      "maxPlayers": 100,
+      "genres": ["ação", "aventura", "indie", "rpg"],
+      "platform": ["steam"],
+      "requirements": 3
+    },
+    {
+      "id": 5,
+      "name": "Among Us",
+      "maxPlayers": 10,
+      "genres": ["ação", "casual", "indie"],
+      "platform": ["steam", "mobile"],
+      "requirements": 1
+    },
+    {
+      "id": 6,
+      "name": "PUBG (lite)",
+      "maxPlayers": 4,
+      "genres": ["ação", "battle royale", "fps/tps"],
+      "platform": ["propria"],
+      "requirements": 4
+    }
+  ]
+}
